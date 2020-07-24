@@ -7,4 +7,15 @@
     <h1>Welcome to 2FA Demo</h1>
     <p>If you're new here, Please <a href="{{ url_for('register') }}">Register</a> or <a href="{{ url_for('login') }}">Login</a>.</p>
     {% endif %}
+    <hr>
+    <br>
+    
+    <h2>What is TOTP?</h2>
+    <p>TOTP stands for Time based One Time Password. <a href="https://www.freecodecamp.org/news/how-time-based-one-time-passwords-work-and-why-you-should-use-them-in-your-app-fdd2b9ed43c3/">Here is a good article to explain how it works.</a></p>
+    <p>Here is another video explanation of the same:</p>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jxxtVzVLm3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>How to implement it in your project</h2>
+    <p>You can use <a href ="https://github.com/Spomky-Labs/otphp">this library for PHP</a> and <a href="https://github.com/kspearrin/Otp.NET">this library for .NET</a>. This library can generate keys and QR codes for you to embed in the application sign up pages.</p>
+    <p>Other free libraries are avaialble if you use different languages/frameworks.</p>
+
 {% endblock %}
